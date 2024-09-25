@@ -1,4 +1,5 @@
-import { Container, Card, siteFeature } from "..";
+import { Container, Card } from "..";
+import { siteFeature } from "../SiteFeature"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

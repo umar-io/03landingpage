@@ -1,9 +1,10 @@
-import { Hero , SiteFeature } from "..";
+import { Hero , SiteFeature , Services} from "..";
 const Home = () => {
   return (
     <>
       <Hero />
       <SiteFeature />
+      <Services />
     </>
   );
 };
