@@ -4,7 +4,7 @@ import NavBar  from "../component/NavBar";
 const LandingLayout = () => {
   return (
     <>
-    <NavBar src={""} />
+    <NavBar />
     <Outlet />
     </>
   )
