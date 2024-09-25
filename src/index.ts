@@ -37,7 +37,7 @@ export const siteFeature = [
     },
     {
         id: 3,
-        direction: "fade-right",
+        direction: "fade-left",
         featureName: "Services at a Low Cost",
         icon: specialIcon,
         text: "By becoming an agent, you can now get a substantial discount on all of our services."
