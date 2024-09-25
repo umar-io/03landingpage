@@ -26,7 +26,7 @@ export const siteFeature = [
         direction: "fade-left",
         featureName: "Swift Delivery",
         icon: swiftIcon,
-        text: "At aibentopup, all of our products and services are supplied immediately and without delay."
+        text: "At TopUp Access, all of our products and services are supplied immediately and without delay."
     },
     {
         id:2,
