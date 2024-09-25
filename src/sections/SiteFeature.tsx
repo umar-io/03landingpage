@@ -23,10 +23,11 @@ const SiteFeature = () => {
               alt=""
               className="w-[40px] h-[40px] rounded-[50%]"
             />
-            <h5 className="text-white">{feature.featureName}</h5>
+            <h5 className="text-white" data-aos={`${feature.direction}`}>{feature.featureName}</h5>
           </div>
           <h4
             className="text-red-400 font-thin mb-[20px] text-[16px]"
+            data-aos={`${feature.direction}`}
           >
             {feature.text}
           </h4>

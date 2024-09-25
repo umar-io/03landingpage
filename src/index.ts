@@ -23,7 +23,7 @@ export {
 export const siteFeature = [
     {
         id: 1,
-        direction: "fade-left",
+        direction: "fade-down",
         featureName: "Swift Delivery",
         icon: swiftIcon,
         text: "At TopUp Access, all of our products and services are supplied immediately and without delay."
@@ -37,7 +37,7 @@ export const siteFeature = [
     },
     {
         id: 3,
-        direction: "fade-left",
+        direction: "fade-down",
         featureName: "Services at a Low Cost",
         icon: specialIcon,
         text: "By becoming an agent, you can now get a substantial discount on all of our services."
