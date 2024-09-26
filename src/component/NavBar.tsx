@@ -5,6 +5,7 @@ interface NavLink {
   name: string;
   path?: string;
   children?: NavLink[];
+  onClick?: () => void;
 }
 
 const NavBar: React.FC = () => {
@@ -13,6 +14,15 @@ const NavBar: React.FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
+  const scrollToService = () =>{
+    const servicesSection = document.getElementById('services');
+    if(servicesSection){
+      servicesSection?.scrollIntoView({behavior: 'smooth'})
+      console.log('hello world')
+    }
+    return undefined;
+  }
 
   const navLinks: NavLink[] = [
     { name: "Home", path: "/" },
@@ -24,10 +34,11 @@ const NavBar: React.FC = () => {
         { name: "Forgot Password", path: "/forgot-password" },
       ],
     },
-    { name: "Service", path: "/Services" },
-    { name: "Testimonies", path: "/testimonies" },
+    { name: "Service", path: "#services" , onClick:scrollToService},
+    { name: "Testimonies", path: "#testimonies" },
     { name: "Developers API", path: "/api/documentation" },
   ];
+
 
   return (
     <nav className="bg-gray-800 fixed top-0 left-0 right-0 z-10">
@@ -77,6 +88,7 @@ const NavBar: React.FC = () => {
                     key={link.name}
                     href={link.path}
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={link.onClick}
                   >
                     {link.name}
                   </a>
@@ -149,6 +161,7 @@ const NavBar: React.FC = () => {
                   key={link.name}
                   href={link.path}
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={link.onClick}
                 >
                   {link.name}
                 </a>

@@ -6,7 +6,7 @@ import { smiling } from "../assets";
 const Hero: React.FC = () => {
   return (
     <>
-      <Container className="lg:flex w-full h-[fit-content] mt-[4rem]">
+      <Container className="lg:flex w-full h-[400px] mt-[4rem]">
         <div className="flex flex-col lg:w-[50%] w-full gap-[30px] bg-gray-800 border-t border-red-500 p-5">
           <div className="flex flex-col lg:justify-start lg:items-start items-center w-full lg:mt-[30px] mt-4">
             <h3 className="text-white uppercase lg:mb-0 font-normal text-[20px]">
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="lg:w-[50%] w-full">
-          <img src={smiling} alt="" className="w-full bg-cover" />
+          <img src={smiling} alt="" className="w-full h-[400px] bg-[100%] bg-cover object-contain" />
         </div>
       </Container>
     </>
