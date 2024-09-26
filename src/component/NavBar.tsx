@@ -19,7 +19,14 @@ const NavBar: React.FC = () => {
     const servicesSection = document.getElementById('services');
     if(servicesSection){
       servicesSection?.scrollIntoView({behavior: 'smooth'})
-      console.log('hello world')
+    }
+    return undefined;
+  }
+
+  const scrollToTestimonial = () =>{
+    const testimonialSection = document.getElementById('testimonial');
+    if(testimonialSection){
+      testimonialSection?.scrollIntoView({behavior: 'smooth'});
     }
     return undefined;
   }
@@ -35,7 +42,7 @@ const NavBar: React.FC = () => {
       ],
     },
     { name: "Service", path: "#services" , onClick:scrollToService},
-    { name: "Testimonies", path: "#testimonies" },
+    { name: "Testimonies", path: "#testimonial", onClick:scrollToTestimonial},
     { name: "Developers API", path: "/api/documentation" },
   ];
 

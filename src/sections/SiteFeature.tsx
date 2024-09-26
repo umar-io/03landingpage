@@ -8,7 +8,8 @@ const SiteFeature = () => {
     AOS.init();
   }, []);
   return (
-    <Container className="flex lg:flex-row flex-col w-full h-[fit-content] items-center lg:gap-[20px] gap-[10px] justify-between lg:px-[80px] lg:mt-7 lg:mb-7 px-[30px] mt-[200px]">
+    <Container className="flex lg:flex-row flex-col w-full h-[fit-content] items-center lg:gap-[20px] gap-[10px] justify-between lg:px-[80px] lg:mt-7 lg:mb-7 px-[30px] mt-[200px] mb-[40px]">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 gap-8 place-items-center"> {/* Fixed 3 columns */}
       {siteFeature.map((feature) => (
         <Card
           key={feature.id}
@@ -35,6 +36,7 @@ const SiteFeature = () => {
           </h4>
         </Card>
       ))}
+      </div>
     </Container>
   );
 };
