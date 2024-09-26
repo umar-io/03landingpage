@@ -10,10 +10,11 @@ const Services = () => {
       {services.map((service) => (
         <Card
           key={service.id}
-          className="flex flex-col gap-[20px] lg:w-[400px] w-[full] h-[fit-content] bg-white rounded-[20px] shadow-lg mt-[10px] items-center"
+          className="flex flex-col gap-[20px] lg:w-[400px] w-[full] h-[fit-content] bg-white rounded-[20px] shadow-lg mt-[10px] items-center justify-center"
+          direction={service.direction}
         >
           <img src={service.icon} alt="" className="w-[70px]" />
-          <h4>{service.text}</h4>
+          <h4 className="font-[400]">{service.text}</h4>
           <p>{service.desc}</p>
         </Card>
       ))}
